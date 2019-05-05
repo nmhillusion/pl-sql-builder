@@ -1,0 +1,28 @@
+{
+  "name": "pl-sql-builder",
+  "version": "1.0.0",
+  "description": "a builder tool for packages of pl/sql oracle database",
+  "main": "buildPlPackage.js",
+  "watch": {
+    "pl": {
+      "extensions": "pck,fnc,prc",
+      "ignore": [
+        "*.compiled.*"
+      ],
+      "quiet": false,
+      "patterns": [
+        "plsql"
+      ]
+    }
+  },
+  "scripts": {
+    "pl": "node ./buildPlPackage",
+    "watch": "npm-watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nmhillusion",
+  "license": "ISC",
+  "dependencies": {
+    "npm-watch": "^0.6.0"
+  }
+}
